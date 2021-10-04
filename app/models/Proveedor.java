@@ -10,7 +10,7 @@ public class Proveedor extends Model{
         public String nom;
 
         @OneToMany (mappedBy = "proveedors")
-        public List<Productos> productos = new ArrayList<Productos>();;
+        public List<Productos> productos = new ArrayList<>();
 
         public Proveedor(String nom) {
             this.nom = nom;

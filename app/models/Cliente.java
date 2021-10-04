@@ -11,7 +11,7 @@ public class Cliente extends Model{
     public String correo;
 
     @OneToMany (mappedBy = "clientes")
-    public List<Compra> comprasList= new ArrayList<Compra>();
+    public List<Compra> comprasList= new ArrayList<>();
 
 
     public Cliente(String nom, String password, String correo){

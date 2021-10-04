@@ -10,7 +10,7 @@ public class Productos extends Model{
     public int preu;
 
     @OneToMany (mappedBy = "producto")
-    public List<Compra> compras = new ArrayList<Compra>();
+    public List<Compra> compras = new ArrayList<>();
     @ManyToOne
     public Proveedor proveedors;
 
