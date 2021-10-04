@@ -1,0 +1,4 @@
+27 sep 2021 10:27:17,933 INFO  ~ Starting C:\Users\pablo\Desktop\UPC\PES\play-1.5.3\play-1.5.3\Test\.
+27 sep 2021 10:27:18,386 INFO  ~ Module docviewer is available (C:\Users\pablo\Desktop\UPC\PES\play-1.5.3\play-1.5.3\modules\docviewer)
+27 sep 2021 10:27:19,193 WARN  ~ You're running Play! in DEV mode
+27 sep 2021 10:27:19,460 ERROR ~ Could not bind on port 9000
