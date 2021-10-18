@@ -6,17 +6,19 @@ import java.util.List;
 
 @Entity
 public class Productos extends Model{
-    public String nom;
-    public int preu;
+    public String name;
+    public int price;
+    public int stock;
 
     @OneToMany (mappedBy = "producto")
     public List<Compra> compras = new ArrayList<>();
     @ManyToOne
     public Proveedor proveedors;
 
-    public Productos(String nom, int preu){
-        this.nom= nom;
-        this.preu = preu;
+    public Productos(String name, int price, int stock){
+        this.name= name;
+        this.price = price;
+        this.stock = stock;
     }
 
 }

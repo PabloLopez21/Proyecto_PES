@@ -7,7 +7,9 @@ import play.db.jpa.*;
 
 @Entity
 public class Compra extends Model {
-        public String fecha;
+        public String date;
+        public int value;
+        public int numberOfproducts;
 
         @ManyToOne
         public Cliente clientes;
@@ -15,8 +17,10 @@ public class Compra extends Model {
         public Productos producto;
 
 
-        public Compra(String fecha){
-            this.fecha = fecha;
+        public Compra(String date, int value, int numberOfproducts){
+            this.date = date;
+            this.value = value;
+            this.numberOfproducts = numberOfproducts;
         }
 
     }
